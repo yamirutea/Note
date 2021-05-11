@@ -18,7 +18,6 @@
             box-sizing: border-box;
         }
         .order{
-            display: flex;
             flex-direction: column;
             margin: 2px 8px;
         }
@@ -114,9 +113,19 @@
         .gold{
             background-color: rgb(241, 214, 124);
         }
+        .outer{
+            width: 100%;
+            justify-content: flex-start;
+        }
+        @media screen and (max-width: 780px){
+            .outer{
+                width: 100%;
+                justify-content: center;
+            }
+        }
     </style>
     <body>
-        <div>    
+        <div class="outer">
             <!-- yamirutea式 ブルゴーニュ -->
             <div class="order">
                 <div class="title">
