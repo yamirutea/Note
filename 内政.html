@@ -17,10 +17,13 @@
             display: flex;
             box-sizing: border-box;
         }
+        .order{
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+        }
         .title{
-            width: 160;
-            margin: 2px 12px;
-            margin-bottom: 0px;
+            width: 100%;
             justify-content: center;
             align-items: flex-end;
             font-size: 12px;
@@ -29,7 +32,7 @@
         .group{
             min-height: 22px;
             width: 160px;
-            margin: 1px 12px;
+            margin: 1px 1px;
             padding: 1px 1px;
             border-radius: 6px;
             background-color: #606060;
@@ -120,7 +123,7 @@
     <body>
         <div>    
             <!-- yamirutea式 ブルゴーニュ -->
-            <div style="display: flex; flex-direction: column">
+            <div class="order">
                 <div class="title">
                     yamirutea式 Burg&Huns
                 </div>
@@ -161,16 +164,17 @@
                         <div class="food action">肉</div>
                         <div class="wood action">木II</div>
                     </div>
+                    <div class="villager">
+                        <div class="number">8</div>
+                        <div class="boar action">ｲﾉ引</div>
+                        <div class="food action">肉</div>
+                        <div class="wood action">木II</div>
+                    </div>
                 </div>
                 <div class="group">
                     <div class="villager">
-                        <div class="number">8</div>
-                        <div class="build action">伐採所</div>
-                        <div class="wood action">木I</div>
-                    </div>
-                    <div class="villager">
                         <div class="number">9</div>
-                        <div class="dummy"></div>
+                        <div class="build action">伐採所</div>
                         <div class="wood action">木I</div>
                     </div>
                     <div class="villager">
@@ -178,17 +182,15 @@
                         <div class="dummy"></div>
                         <div class="wood action">木I</div>
                     </div>
+                    <div class="villager">
+                        <div class="number">11</div>
+                        <div class="house action">家x2</div>    
+                        <div class="wood action">木I</div>
+                    </div>
                 </div>
                 <div class="group">
                     <div class="villager">
-                        <div class="number">11</div>
-                        <div class="dummy"></div>
-                        <div class="boar action">ｲﾉ引</div>
-                        <div class="food action">肉</div>
-                    </div>
-                    <div class="villager">
                         <div class="number">12</div>
-                        <div class="house action">家x2</div>
                         <div class="boar action">ｲﾉ引</div>
                         <div class="food action">肉</div>
                     </div>
@@ -280,7 +282,7 @@
             </div>
 
             <!-- yamirutea式 ブルゴーニュ即城主 -->
-            <div style="display: flex; flex-direction: column">
+            <div class="order">
                 <div class="title">
                     yamirutea式 B&H 即城主
                 </div>
@@ -321,16 +323,17 @@
                         <div class="food action">肉</div>
                         <div class="wood action">木II</div>
                     </div>
+                    <div class="villager">
+                        <div class="number">8</div>
+                        <div class="boar action">ｲﾉ引</div>
+                        <div class="food action">肉</div>
+                        <div class="wood action">木II</div>
+                    </div>
                 </div>
                 <div class="group">
                     <div class="villager">
-                        <div class="number">8</div>
-                        <div class="build action">伐採所</div>
-                        <div class="wood action">木I</div>
-                    </div>
-                    <div class="villager">
                         <div class="number">9</div>
-                        <div class="dummy"></div>
+                        <div class="build action">伐採所</div>
                         <div class="wood action">木I</div>
                     </div>
                     <div class="villager">
@@ -338,18 +341,26 @@
                         <div class="dummy"></div>
                         <div class="wood action">木I</div>
                     </div>
+                    <div class="villager">
+                        <div class="number">11</div>
+                        <div class="house action">家x2</div>    
+                        <div class="wood action">木I</div>
+                    </div>
                 </div>
                 <div class="group">
                     <div class="villager">
-                        <div class="number">11</div>
-                        <div class="dummy"></div>
+                        <div class="number">12</div>
                         <div class="boar action">ｲﾉ引</div>
                         <div class="food action">肉</div>
                     </div>
                     <div class="villager">
-                        <div class="number">12</div>
-                        <div class="house action">家x2</div>
-                        <div class="boar action">ｲﾉ引</div>
+                        <div class="number">13</div>
+                        <div class="dummy"></div>
+                        <div class="food action">肉</div>
+                    </div>
+                    <div class="villager">
+                        <div class="number">14</div>
+                        <div class="dummy"></div>
                         <div class="food action">肉</div>
                     </div>
                 </div>
@@ -383,7 +394,7 @@
                 <div class="group">
                     <div class="villager">
                         <div class="number">20</div>
-                        <div class="dummy"></div>
+                        <div class="house action">家</div>
                         <div class="wood action">木I</div>
                     </div>
                     <div class="villager">
@@ -419,40 +430,33 @@
                 </div>
                 <div class="group">
                     <span style="color: rgb(255, 247, 134)">領主</span>
-                    <div class="villager">
-                        <div class="house action">家x2</div>
-                        <div class="build action">戦士育成所</div>
-                    </div>
                 </div>
                 <div class="group">
                     <div class="villager">
-                        <div class="build action">馬小屋</div>
+                        <div class="build action">鍛冶場</div>
+                        <div class="build action">市場</div>
                     </div>
                     <div class="villager">
-                        <div class="number">22</div>
+                        <div class="number">28</div>
                         <div class="dummy"></div>
                         <div class="wood action">木</div>
                     </div>
                     <div class="villager">
-                        <div class="number">23</div>
+                        <div class="number">29</div>
                         <div class="dummy"></div>
                         <div class="wood action">木</div>
                     </div>
+                </div>
+                <div class="group">
+                    <span style="color: rgb(255, 247, 134)">城主</span>
                     <div class="villager">
-                        <div class="number">24</div>
-                        <div class="dummy"></div>
-                        <div class="wood action">木</div>
-                    </div>
-                    <div class="villager">
-                        <div class="number">25</div>
-                        <div class="dummy"></div>
-                        <div class="wood action">木</div>
+                        <div class="house action">家x2</div>
                     </div>
                 </div>
             </div>
 
             <!-- yamirutea式 21斥候 -->
-            <div style="display: flex; flex-direction: column">
+            <div class="order">
                 <div class="title">
                     yamirutea式 21斥候
                 </div>
@@ -613,7 +617,7 @@
             </div>
 
             <!-- yamirutea式 即城主 -->
-            <div style="display: flex; flex-direction: column">
+            <div class="order">
                 <div class="title">
                     yamirutea式 即城主
                 </div>
