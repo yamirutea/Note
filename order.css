@@ -1,0 +1,129 @@
+@font-face{
+    font-family: 'MyFont';
+    src: url('RocknRollOne-Regular.ttf');
+}
+body{
+    font-family: MyFont;
+    background-color: #000000;
+}
+div{
+    display: flex;
+    box-sizing: border-box;
+}
+.outer{
+    width: 100%;
+    padding: 0px 5vmin;
+}
+.inner{
+    width: 1280px;
+    margin: 0px auto;
+}
+/********** (screen < 1280px) **********/
+@media screen and (max-width: 1280px){
+    .inner{
+        width: 100%;
+    }
+}
+.orders{
+    width: 100%;
+    justify-content: center;
+}
+.order{
+    width: 25%;
+    max-width: 160px;
+    flex-direction: column;
+    margin: 2px 1%;
+}
+.title{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: #ffffff;
+}
+.group{
+    width: 100%;
+    min-height: 22px;
+    margin: 1px 1px;
+    padding: 1px 2px;
+    border-radius: 6px;
+    background-color: #606060;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+    color: #fff;
+}
+.villager{
+    width: 100%;
+    height: 24px;
+    margin: 1px;
+    border-radius: 6px;
+    background-color: #303030;
+    justify-content: space-between;
+    align-items: center;
+}
+.number{
+    width: 16px;
+    height: 100%;
+    margin: 1px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 10px;
+}
+.first{
+    height: 20px;
+    width: 46px;
+    margin: 1px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    color: #000000;
+    white-space: nowrap;
+}
+.second{
+    height: 20px;
+    width: 30px;
+    margin: 1px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 100;
+    color: #000000;
+    white-space: nowrap;
+}
+.house{
+    background-color: rgb(132, 185, 255);
+    flex-grow: 1;
+}
+.house2{
+    width: 46px;
+    height: 46px;
+    margin-top: -26px;
+    background-color: rgb(132, 185, 255);
+    flex-grow: 1;
+}
+.build{
+    background-color: rgb(189, 131, 255);
+}
+.boar{
+    background-color: rgb(231, 160, 119);
+}
+.wood{
+    background-color: rgb(192, 117, 87);
+}
+.food{
+    background-color: rgb(255, 131, 131);
+}
+.farm{
+    background-color: rgb(180, 216, 113);
+}
+.berry{
+    background-color: rgb(100, 177, 93);
+}
+.gold{
+    background-color: rgb(241, 214, 124);
+}
