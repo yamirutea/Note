@@ -21,19 +21,19 @@ div{
 .toggle_switch > label {
     display: block;
     position: relative;
-    margin-left: -40px;
-    width: 40px;
-    height: 20px;
-    border-radius: 10px;
+    margin-left: -48px;
+    width: 48px;
+    height: 24px;
+    border-radius: 12px;
     background-color: #808080;
     cursor: pointer;
 }
 .toggle_switch > label::before {
     position: absolute;
     left: 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
     background-color: #ffffff;
     transition: 0.3s;
     content: "";
@@ -42,7 +42,7 @@ div{
     background-color: #e73b6f;
 }
 .toggle_switch > input:checked + label::before {
-    left: calc(100% - 20px);
+    left: calc(100% - 24px);
 }
 .old{
     display: none;
@@ -61,9 +61,10 @@ div{
 }
 .order{
     width: 49%;
-    max-width: 180px;
+    max-width: 170px;
     flex-direction: column;
-    margin: 0px 0.5%;
+    margin: 0px 2%;
+    flex-grow: 999;
 }
 .title{
     display: block;
@@ -75,7 +76,7 @@ div{
 }
 .group{
     width: 100%;
-    min-height: 22px;
+    min-height: 20px;
     margin: 1px 1px;
     padding: 1px 2px;
     border-radius: 6px;
@@ -88,7 +89,7 @@ div{
 }
 .villager{
     width: 100%;
-    height: 22px;
+    height: 20px;
     margin: 1px;
     border-radius: 6px;
     background-color: #303030;
@@ -105,7 +106,7 @@ div{
     font-size: 10px;
 }
 .first{
-    height: 18px;
+    height: 16px;
     width: 46px;
     margin: 1px;
     border-radius: 6px;
@@ -116,7 +117,7 @@ div{
     white-space: nowrap;
 }
 .second{
-    height: 18px;
+    height: 16px;
     width: 30px;
     margin: 1px;
     border-radius: 6px;
@@ -132,8 +133,8 @@ div{
 }
 .house2{
     width: 46px;
-    height: 42px;
-    margin-top: -24px;
+    height: 38px;
+    margin-top: -22px;
     background-color: rgb(132, 185, 255);
     flex-grow: 1;
 }
@@ -165,7 +166,7 @@ div{
         width: 100%;
     }
     .orders{
-        justify-content: space-between;
+        justify-content: center;
     }
 }
 
