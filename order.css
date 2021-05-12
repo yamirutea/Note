@@ -27,6 +27,7 @@ div{
     border-radius: 12px;
     background-color: #808080;
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .toggle_switch > label::before {
     position: absolute;
