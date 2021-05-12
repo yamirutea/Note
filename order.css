@@ -10,29 +10,59 @@ div{
     display: flex;
     box-sizing: border-box;
 }
+
+.toggle_switch {
+    display: table;
+}
+.toggle_switch > input {
+    display: none;
+}
+.toggle_switch > label {
+    display: block;
+    position: relative;
+    width: 48px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #808080;
+    cursor: pointer;
+}
+.toggle_switch > label::before {
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    transition: 0.3s;
+    content: "";
+}
+.toggle_switch > input:checked + label {
+    background-color: #e73b6f;
+}
+.toggle_switch > input:checked + label::before {
+    left: calc(100% - 24px);
+}
+.old{
+    display: none;
+}
+
 .outer{
     width: 100%;
-    padding: 0px 5vmin;
+    padding: 0px 2vmin;
 }
 .inner{
     width: 1280px;
     margin: 0px auto;
-}
-/********** (screen < 1280px) **********/
-@media screen and (max-width: 1280px){
-    .inner{
-        width: 100%;
-    }
+    flex-direction: column;
 }
 .orders{
     width: 100%;
-    justify-content: center;
 }
 .order{
-    width: 25%;
-    max-width: 160px;
+    width: 49%;
+    max-width: 180px;
     flex-direction: column;
-    margin: 2px 1%;
+    margin: 2px 0.5%;
 }
 .title{
     display: block;
@@ -57,7 +87,7 @@ div{
 }
 .villager{
     width: 100%;
-    height: 24px;
+    height: 22px;
     margin: 1px;
     border-radius: 6px;
     background-color: #303030;
@@ -74,7 +104,7 @@ div{
     font-size: 10px;
 }
 .first{
-    height: 20px;
+    height: 18px;
     width: 46px;
     margin: 1px;
     border-radius: 6px;
@@ -85,7 +115,7 @@ div{
     white-space: nowrap;
 }
 .second{
-    height: 20px;
+    height: 18px;
     width: 30px;
     margin: 1px;
     border-radius: 6px;
@@ -101,7 +131,7 @@ div{
 }
 .house2{
     width: 46px;
-    height: 46px;
+    height: 42px;
     margin-top: -26px;
     background-color: rgb(132, 185, 255);
     flex-grow: 1;
@@ -126,4 +156,21 @@ div{
 }
 .gold{
     background-color: rgb(241, 214, 124);
+}
+
+/********** (screen < 780px) **********/
+@media screen and (max-width: 780px){
+    .inner{
+        width: 100%;
+    }
+    .orders{
+        justify-content: space-around;
+    }
+}
+
+/********** (screen < 1280px) **********/
+@media screen and (max-width: 1280px){
+    .inner{
+        width: 100%;
+    }
 }

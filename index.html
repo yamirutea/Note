@@ -8,9 +8,15 @@
     <body>
         <div class="outer">
             <div class="inner">
+                <div>
+                    <div class="toggle_switch">
+                        <input type="checkbox" name="toggle_button" id="cb_toggle_switch" onclick="toggle()">
+                        <label for="cb_toggle_switch"></label>
+                    </div>
+                </div>
                 <div class="orders">
                     <!-- yamirutea式 ブルゴーニュ -->
-                    <div class="order">
+                    <div class="order new">
                         <div class="title">
                             <span style="font-size: 10px">yamirutea式</span> B&H 21斥候
                         </div>
@@ -174,7 +180,7 @@
                     </div>
 
                     <!-- yamirutea式 ブルゴーニュ即城主 -->
-                    <div class="order">
+                    <div class="order new">
                         <div class="title">
                             <span style="font-size: 10px">yamirutea式</span> B&H 即城主
                         </div>
@@ -349,7 +355,7 @@
                     </div>
 
                     <!-- yamirutea式 21斥候 -->
-                    <div class="order">
+                    <div class="order old">
                         <div class="title">
                             <span style="font-size: 10px">yamirutea式</span> 21斥候
                         </div>
@@ -510,7 +516,7 @@
                     </div>
 
                     <!-- yamirutea式 即城主 -->
-                    <div class="order">
+                    <div class="order old">
                         <div class="title">
                             <span style="font-size: 10px">yamirutea式</span> 即城主
                         </div>
@@ -671,3 +677,26 @@
         </div>
     </body>
 </html>
+
+<script>
+    let toggle_button = document.getElementById("cb_toggle_switch");
+    let new_order = document.getElementsByClassName("new");
+    let old_order = document.getElementsByClassName("old");
+    function toggle(){
+        if(toggle_button.checked){
+            for(let i = 0; i < new_order.length; i++){
+                new_order[i].style.display = "none";
+            }
+            for(let i = 0; i < old_order.length; i++){
+                old_order[i].style.display = "flex";
+            }
+        }else{
+            for(let i = 0; i < new_order.length; i++){
+                new_order[i].style.display = "flex";
+            }
+            for(let i = 0; i < old_order.length; i++){
+                old_order[i].style.display = "none";
+            }
+        }
+    }
+</script>
