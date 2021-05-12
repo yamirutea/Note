@@ -5,6 +5,7 @@
 body{
     font-family: MyFont;
     background-color: #000000;
+    margin: 4px 0px;
 }
 div{
     display: flex;
@@ -20,18 +21,19 @@ div{
 .toggle_switch > label {
     display: block;
     position: relative;
-    width: 48px;
-    height: 24px;
-    border-radius: 12px;
+    margin-left: -40px;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
     background-color: #808080;
     cursor: pointer;
 }
 .toggle_switch > label::before {
     position: absolute;
     left: 0;
-    width: 24px;
-    height: 24px;
-    border-radius: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
     background-color: #ffffff;
     transition: 0.3s;
     content: "";
@@ -40,7 +42,7 @@ div{
     background-color: #e73b6f;
 }
 .toggle_switch > input:checked + label::before {
-    left: calc(100% - 24px);
+    left: calc(100% - 20px);
 }
 .old{
     display: none;
@@ -53,7 +55,6 @@ div{
 .inner{
     width: 1280px;
     margin: 0px auto;
-    flex-direction: column;
 }
 .orders{
     width: 100%;
@@ -62,14 +63,14 @@ div{
     width: 49%;
     max-width: 180px;
     flex-direction: column;
-    margin: 2px 0.5%;
+    margin: 0px 0.5%;
 }
 .title{
     display: block;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-size: 14px;
+    font-size: 12px;
     color: #ffffff;
 }
 .group{
@@ -132,7 +133,7 @@ div{
 .house2{
     width: 46px;
     height: 42px;
-    margin-top: -26px;
+    margin-top: -24px;
     background-color: rgb(132, 185, 255);
     flex-grow: 1;
 }
@@ -164,7 +165,7 @@ div{
         width: 100%;
     }
     .orders{
-        justify-content: space-around;
+        justify-content: space-between;
     }
 }
 
