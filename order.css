@@ -59,6 +59,7 @@ div{
 }
 .orders{
     width: 100%;
+    user-select: none;
 }
 .order{
     width: 49%;
