@@ -10,10 +10,10 @@
             <div class="inner">
                 <div class="orders">
                     <!-- yamirutea式 SC Rush -->
-                    <div class="order new">
+                    <div class="order burg">
                         <div class="title">
                             <span style="font-size: 10px">yamirutea式<br></span>
-                            Burg&Huns SC Rush
+                            Burgundians SC Rush
                         </div>
                         <div class="group">
                             <div class="villager">
@@ -175,10 +175,10 @@
                     </div>
 
                     <!-- yamirutea式 ブルゴーニュ即城主 -->
-                    <div class="order new">
+                    <div class="order burg">
                         <div class="title">
                             <span style="font-size: 10px">yamirutea式<br></span>
-                            Burg&Huns 即城主
+                            Burgundians 即城主
                         </div>
                         <div class="group">
                             <div class="villager">
@@ -684,22 +684,22 @@
 
 <script>
     let toggle_button = document.getElementById("cb_toggle_switch");
-    let new_order = document.getElementsByClassName("new");
+    let burg_order = document.getElementsByClassName("new");
     let old_order = document.getElementsByClassName("old");
     function toggle(){
         if(toggle_button.checked){
-            for(let i = 0; i < new_order.length; i++){
-                new_order[i].style.display = "none";
-            }
-            for(let i = 0; i < old_order.length; i++){
-                old_order[i].style.display = "flex";
-            }
-        }else{
-            for(let i = 0; i < new_order.length; i++){
-                new_order[i].style.display = "flex";
+            for(let i = 0; i < burg_order.length; i++){
+                burg_order[i].style.display = "flex";
             }
             for(let i = 0; i < old_order.length; i++){
                 old_order[i].style.display = "none";
+            }
+        }else{
+            for(let i = 0; i < burg_order.length; i++){
+                burg_order[i].style.display = "none";
+            }
+            for(let i = 0; i < old_order.length; i++){
+                old_order[i].style.display = "flex";
             }
         }
     }
