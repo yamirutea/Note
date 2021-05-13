@@ -146,6 +146,13 @@ div{
 .boar{
     background-color: rgb(231, 160, 119);
 }
+.boar4{
+    width: 46px;
+    height: 82px;
+    margin-top: -66px;
+    background-color: rgb(231, 160, 119);
+    flex-grow: 1;
+}
 .wood{
     background-color: rgb(192, 117, 87);
 }
