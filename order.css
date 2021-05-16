@@ -42,14 +42,14 @@ input[type="radio"]{
 }
 
 .orders{
-    width: 100%;
     user-select: none;
+    justify-content: center;
 }
 .order{
     width: 100%;
+    margin: 0 1vmin;
     max-width: 180px;
     flex-direction: column;
-    margin: 0px auto;
 }
 .title{
     display: block;
