@@ -42,8 +42,13 @@ input[type="radio"]{
 }
 
 .orders{
+    padding: 1vmin;
     user-select: none;
     justify-content: center;
+    background-size: auto auto;
+    background-image: repeating-linear-gradient(
+        45deg,transparent, transparent 1vmin, #101010 1vmin, #101010 1.6vmin );
+    border: solid 1px #404040;
 }
 .order{
     width: 100%;
@@ -52,6 +57,7 @@ input[type="radio"]{
     flex-direction: column;
 }
 .title{
+    margin-top: -1vmin;
     display: block;
     overflow: hidden;
     white-space: nowrap;
