@@ -9,8 +9,8 @@
         <meta property="og:type" content="website">
         <meta property="og:title" content="AoE2 Orders">
         <meta property="og:description" content="AoE2 Orders">
-        <link rel="stylesheet" type="text/css" media="screen" href="common.css?ver=1.00"/>
-        <link rel="stylesheet" type="text/css" media="screen" href="order.css?ver=1.00"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="common.css?ver=1.01"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="order.css?ver=1.01"/>
         <title>AoE2 Orders</title>
     </head>
     <body>
@@ -18,712 +18,704 @@
         <!-- 設定 -->
         <div class="outer">
             <div class="inner" style="flex-direction: column">
-                騎兵進化　射手進化
+                <div class="radio-wrapper">
+                    <input id="sc-radio" type="radio" name="order" value="sc" checked>
+                    <label for="sc-radio" onclick="orderSwitch('sc')">騎兵</label>
+                    <input id="ar-radio" type="radio" name="order" value="ar">
+                    <label for="ar-radio" onclick="orderSwitch('ar')">射手</label>
+                    <input id="fc-radio" type="radio" name="order" value="fc">
+                    <label for="fc-radio" onclick="orderSwitch('fc')">即城主</label>
+                    <input id="bgd-radio" type="radio" name="order" value="bgd">
+                    <label for="bgd-radio" onclick="orderSwitch('bgd')">Bgd</label>
+                </div>
             </div>
         </div>
         <!-- オーダー -->
         <div class="outer">
             <div class="inner" style="flex-direction: column">
 
-
-
-            </div>
-        </div>
-    </body>
-</html>
-
-
-
-
-
-<html lang="ja">
-    <body>
-        <div class="outer">
-            <div class="inner">
-                <div class="orders">
-                    <!-- yamirutea式 Burgundians SC Rush -->
-                    <div class="order burg">
-                        <div class="title">
-                            <span style="font-size: 10px">yamirutea式<br></span>
-                            Burgundians SC Rush
+                <!-- yamirutea式 Burgundians SC Rush -->
+                <div id="cs-order" class="order">
+                    <div class="title">
+                        <span style="font-size: 10px">yamirutea式<br></span>
+                        Burgundians SC Rush
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">2</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="wood second">木</div>
                         </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">2</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">3</div>
-                                <div class="house2 first">家</div>
-                                <div class="food second">肉</div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">4</div>
-                                <div class="house first">家</div>
-                                <div class="food second">肉</div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">5</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">6</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">7</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="wood second">木</div>
-                            </div>
+                        <div class="villager">
+                            <div class="number">3</div>
+                            <div class="house2 first">家</div>
+                            <div class="food second">肉</div>
+                            <div class="wood second">木</div>
                         </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">8</div>
-                                <div class="build first">伐採所</div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">9</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">10</div>
-                                <div class="house first">家x2</div>
-                                <div class="wood second">木</div>
-                            </div>
+                        <div class="villager">
+                            <div class="number">4</div>
+                            <div class="house first">家</div>
+                            <div class="food second">肉</div>
+                            <div class="wood second">木</div>
                         </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">11</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">12</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">13</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">14</div>
-                                <div class="boar4 first">ｲﾉ引</div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
+                        <div class="villager">
+                            <div class="number">5</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="wood second">木</div>
                         </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">15</div>
-                                <div class="build first">粉引き</div>
-                                <div class="berry second">苺</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">16</div>
-                                <div class="first"></div>
-                                <div class="berry second">苺</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">17</div>
-                                <div class="first"></div>
-                                <div class="berry second">苺</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">18</div>
-                                <div class="first"></div>
-                                <div class="berry second">苺</div>
-                            </div>
+                        <div class="villager">
+                            <div class="number">6</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="wood second">木</div>
                         </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">19</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">20</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">21</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            機織り
-                        </div>
-                        <div class="group">
-                            <span style="color: rgb(255, 247, 134)">領主</span>
-                            <div class="villager">
-                                <div class="house first">家x2</div>
-                                <div class="build first">戦士育成所</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="build first">馬小屋</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">22</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">23</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">24</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">25</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
+                        <div class="villager">
+                            <div class="number">7</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="wood second">木</div>
                         </div>
                     </div>
-
-                    <!-- yamirutea式 Burgundians 即城主 -->
-                    <div class="order burg">
-                        <div class="title">
-                            <span style="font-size: 10px">yamirutea式<br></span>
-                            Burgundians 即城主
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">8</div>
+                            <div class="build first">伐採所</div>
+                            <div class="wood second">木</div>
                         </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">2</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">3</div>
-                                <div class="house2 second">家</div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">4</div>
-                                <div class="house first">家</div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">5</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">6</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">7</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
+                        <div class="villager">
+                            <div class="number">9</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
                         </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">8</div>
-                                <div class="build first">伐採所</div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">9</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">10</div>
-                                <div class="house first">家x2</div>
-                                <div class="wood second">木</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">11</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">12</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">13</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">14</div>
-                                <div class="boar4 first">ｲﾉ引</div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">15</div>
-                                <div class="build first">粉引き</div>
-                                <div class="berry second">苺</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">16</div>
-                                <div class="first"></div>
-                                <div class="berry second">苺</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">17</div>
-                                <div class="first"></div>
-                                <div class="berry second">苺</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">18</div>
-                                <div class="first"></div>
-                                <div class="berry second">苺</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">19</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <span style="writing-mode: vertical-rl; text-orientation: sideways">～</span>
-                            <div class="villager">
-                                <div class="number">23</div>
-                                <div class="house first">家</div>
-                                <div class="wood second">木</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">24</div>
-                                <div class="build first">採掘所</div>
-                                <div class="gold second">金</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">25</div>
-                                <div class="first"></div>
-                                <div class="gold second">金</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">26</div>
-                                <div class="first"></div>
-                                <div class="gold second">金</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            機織り
-                        </div>
-                        <div class="group">
-                            <span style="color: rgb(255, 247, 134)">領主</span>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="build first">鍛冶場</div>
-                                <div class="build first">市場</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">27</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">28</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <span style="color: rgb(255, 247, 134)">城主</span>
-                            <div class="villager">
-                                <div class="house first">家x2</div>
-                            </div>
+                        <div class="villager">
+                            <div class="number">10</div>
+                            <div class="house first">家x2</div>
+                            <div class="wood second">木</div>
                         </div>
                     </div>
-
-                    <!-- yamirutea式 SC Rush -->
-                    <div class="order old">
-                        <div class="title">
-                            <span style="font-size: 10px">yamirutea式<br></span>
-                            SC Rush
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">11</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
                         </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">2</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">3</div>
-                                <div class="house2 second">家</div>
-                                <div class="food second">肉</div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">4</div>
-                                <div class="house first">家</div>
-                                <div class="food second">肉</div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">5</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">6</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">7</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="wood second">木</div>
-                            </div>
+                        <div class="villager">
+                            <div class="number">12</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
                         </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">8</div>
-                                <div class="first"></div>
-                                <div class="wood second">TC木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">9</div>
-                                <div class="first"></div>
-                                <div class="wood second">TC木</div>
-                            </div>
+                        <div class="villager">
+                            <div class="number">13</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
                         </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">10</div>
-                                <div class="first"></div>
-                                <div class="boar second">ｲﾉ引</div>
-                                <div class="food second">肉</div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">11</div>
-                                <div class="house first">家x3</div>
-                                <div class="boar second">ｲﾉ引</div>
-                                <div class="food second">肉</div>
-                                <div class="wood second">木</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">12</div>
-                                <div class="build first">粉引き</div>
-                                <div class="berry second">苺</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">13</div>
-                                <div class="first"></div>
-                                <div class="berry second">苺</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">14</div>
-                                <div class="first"></div>
-                                <div class="berry second">苺</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">15</div>
-                                <div class="first"></div>
-                                <div class="berry second">苺</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">16</div>
-                                <div class="first"></div>
-                                <div class="berry second">苺</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">17</div>
-                                <div class="build first">伐採所</div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">18</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">19</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">20</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">21</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            機織り
-                        </div>
-                        <div class="group">
-                            <span style="color: rgb(255, 247, 134)">領主</span>
-                            <div class="villager">
-                                <div class="build first">戦士育成所</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="build first">馬小屋</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">22</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">23</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">24</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">25</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
+                        <div class="villager">
+                            <div class="number">14</div>
+                            <div class="boar4 first">ｲﾉ引</div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
                         </div>
                     </div>
-
-                    <!-- yamirutea式 即城主 -->
-                    <div class="order old">
-                        <div class="title">
-                            <span style="font-size: 10px">yamirutea式<br></span>
-                            即城主
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">15</div>
+                            <div class="build first">粉引き</div>
+                            <div class="berry second">苺</div>
                         </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">2</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">3</div>
-                                <div class="house2 second">家</div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">4</div>
-                                <div class="house first">家</div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">5</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">6</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">7</div>
-                                <div class="first"></div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
+                        <div class="villager">
+                            <div class="number">16</div>
+                            <div class="first"></div>
+                            <div class="berry second">苺</div>
                         </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">8</div>
-                                <div class="first"></div>
-                                <div class="wood second">TC木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">9</div>
-                                <div class="first"></div>
-                                <div class="wood second">TC木</div>
-                            </div>
+                        <div class="villager">
+                            <div class="number">17</div>
+                            <div class="first"></div>
+                            <div class="berry second">苺</div>
                         </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">10</div>
-                                <div class="first"></div>
-                                <div class="boar second">ｲﾉ引</div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">11</div>
-                                <div class="house first">家x3</div>
-                                <div class="boar second">ｲﾉ引</div>
-                                <div class="food second">肉</div>
-                                <div class="farm second">畑</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">12</div>
-                                <div class="build first">粉引き</div>
-                                <div class="berry second">苺</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">13</div>
-                                <div class="first"></div>
-                                <div class="berry second">苺</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">14</div>
-                                <div class="first"></div>
-                                <div class="berry second">苺</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">15</div>
-                                <div class="first"></div>
-                                <div class="berry second">苺</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">16</div>
-                                <div class="first"></div>
-                                <div class="berry second">苺</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">17</div>
-                                <div class="build first">伐採所</div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <span style="writing-mode: vertical-rl; text-orientation: sideways">～</span>
-                            <div class="villager">
-                                <div class="number">24</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">25</div>
-                                <div class="build first">採掘所</div>
-                                <div class="gold second">金</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">26</div>
-                                <div class="first"></div>
-                                <div class="gold second">金</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">27</div>
-                                <div class="first"></div>
-                                <div class="gold second">金</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            機織り
-                        </div>
-                        <div class="group">
-                            <span style="color: rgb(255, 247, 134)">領主</span>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="build first">鍛冶場</div>
-                                <div class="build first">市場</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">28</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">29</div>
-                                <div class="first"></div>
-                                <div class="wood second">木</div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <span style="color: rgb(255, 247, 134)">城主</span>
-                            <div class="villager">
-                                <div class="house first">家x2</div>
-                            </div>
+                        <div class="villager">
+                            <div class="number">18</div>
+                            <div class="first"></div>
+                            <div class="berry second">苺</div>
                         </div>
                     </div>
-                    <div style="margin: 4px -2%">
-                        <div class="toggle_switch">
-                            <input type="checkbox" name="toggle_button" id="cb_toggle_switch" onclick="toggle()">
-                            <label for="cb_toggle_switch"></label>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">19</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">20</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">21</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        機織り
+                    </div>
+                    <div class="group">
+                        <span style="color: rgb(255, 247, 134)">領主</span>
+                        <div class="villager">
+                            <div class="house first">家x2</div>
+                            <div class="build first">戦士育成所</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="build first">馬小屋</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">22</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">23</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">24</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">25</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
                         </div>
                     </div>
                 </div>
+
+                <!-- yamirutea式 SC Rush -->
+                <div id="ar-order" class="order">
+                    <div class="title">
+                        <span style="font-size: 10px">yamirutea式<br></span>
+                        SC Rush
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">2</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">3</div>
+                            <div class="house2 second">家</div>
+                            <div class="food second">肉</div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">4</div>
+                            <div class="house first">家</div>
+                            <div class="food second">肉</div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">5</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">6</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">7</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="wood second">木</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">8</div>
+                            <div class="first"></div>
+                            <div class="wood second">TC木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">9</div>
+                            <div class="first"></div>
+                            <div class="wood second">TC木</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">10</div>
+                            <div class="first"></div>
+                            <div class="boar second">ｲﾉ引</div>
+                            <div class="food second">肉</div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">11</div>
+                            <div class="house first">家x3</div>
+                            <div class="boar second">ｲﾉ引</div>
+                            <div class="food second">肉</div>
+                            <div class="wood second">木</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">12</div>
+                            <div class="build first">粉引き</div>
+                            <div class="berry second">苺</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">13</div>
+                            <div class="first"></div>
+                            <div class="berry second">苺</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">14</div>
+                            <div class="first"></div>
+                            <div class="berry second">苺</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">15</div>
+                            <div class="first"></div>
+                            <div class="berry second">苺</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">16</div>
+                            <div class="first"></div>
+                            <div class="berry second">苺</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">17</div>
+                            <div class="build first">伐採所</div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">18</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">19</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">20</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">21</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        機織り
+                    </div>
+                    <div class="group">
+                        <span style="color: rgb(255, 247, 134)">領主</span>
+                        <div class="villager">
+                            <div class="build first">戦士育成所</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="build first">馬小屋</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">22</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">23</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">24</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">25</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- yamirutea式 即城主 -->
+                <div id="fc-order" class="order">
+                    <div class="title">
+                        <span style="font-size: 10px">yamirutea式<br></span>
+                        即城主
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">2</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">3</div>
+                            <div class="house2 second">家</div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">4</div>
+                            <div class="house first">家</div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">5</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">6</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">7</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">8</div>
+                            <div class="first"></div>
+                            <div class="wood second">TC木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">9</div>
+                            <div class="first"></div>
+                            <div class="wood second">TC木</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">10</div>
+                            <div class="first"></div>
+                            <div class="boar second">ｲﾉ引</div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">11</div>
+                            <div class="house first">家x3</div>
+                            <div class="boar second">ｲﾉ引</div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">12</div>
+                            <div class="build first">粉引き</div>
+                            <div class="berry second">苺</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">13</div>
+                            <div class="first"></div>
+                            <div class="berry second">苺</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">14</div>
+                            <div class="first"></div>
+                            <div class="berry second">苺</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">15</div>
+                            <div class="first"></div>
+                            <div class="berry second">苺</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">16</div>
+                            <div class="first"></div>
+                            <div class="berry second">苺</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">17</div>
+                            <div class="build first">伐採所</div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <span style="writing-mode: vertical-rl; text-orientation: sideways">～</span>
+                        <div class="villager">
+                            <div class="number">24</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">25</div>
+                            <div class="build first">採掘所</div>
+                            <div class="gold second">金</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">26</div>
+                            <div class="first"></div>
+                            <div class="gold second">金</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">27</div>
+                            <div class="first"></div>
+                            <div class="gold second">金</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        機織り
+                    </div>
+                    <div class="group">
+                        <span style="color: rgb(255, 247, 134)">領主</span>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="build first">鍛冶場</div>
+                            <div class="build first">市場</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">28</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">29</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <span style="color: rgb(255, 247, 134)">城主</span>
+                        <div class="villager">
+                            <div class="house first">家x2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- yamirutea式 Burgundians 即城主 -->
+                <div id="bgd-order" class="order">
+                    <div class="title">
+                        <span style="font-size: 10px">yamirutea式<br></span>
+                        Burgundians 即城主
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">2</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">3</div>
+                            <div class="house2 second">家</div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">4</div>
+                            <div class="house first">家</div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">5</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">6</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">7</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">8</div>
+                            <div class="build first">伐採所</div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">9</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">10</div>
+                            <div class="house first">家x2</div>
+                            <div class="wood second">木</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">11</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">12</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">13</div>
+                            <div class="first"></div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">14</div>
+                            <div class="boar4 first">ｲﾉ引</div>
+                            <div class="food second">肉</div>
+                            <div class="farm second">畑</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">15</div>
+                            <div class="build first">粉引き</div>
+                            <div class="berry second">苺</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">16</div>
+                            <div class="first"></div>
+                            <div class="berry second">苺</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">17</div>
+                            <div class="first"></div>
+                            <div class="berry second">苺</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">18</div>
+                            <div class="first"></div>
+                            <div class="berry second">苺</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">19</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <span style="writing-mode: vertical-rl; text-orientation: sideways">～</span>
+                        <div class="villager">
+                            <div class="number">23</div>
+                            <div class="house first">家</div>
+                            <div class="wood second">木</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="number">24</div>
+                            <div class="build first">採掘所</div>
+                            <div class="gold second">金</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">25</div>
+                            <div class="first"></div>
+                            <div class="gold second">金</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">26</div>
+                            <div class="first"></div>
+                            <div class="gold second">金</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        機織り
+                    </div>
+                    <div class="group">
+                        <span style="color: rgb(255, 247, 134)">領主</span>
+                    </div>
+                    <div class="group">
+                        <div class="villager">
+                            <div class="build first">鍛冶場</div>
+                            <div class="build first">市場</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">27</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                        <div class="villager">
+                            <div class="number">28</div>
+                            <div class="first"></div>
+                            <div class="wood second">木</div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <span style="color: rgb(255, 247, 134)">城主</span>
+                        <div class="villager">
+                            <div class="house first">家x2</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </body>
 </html>
 
 <script>
-    let toggle_button = document.getElementById("cb_toggle_switch");
-    let burg_order = document.getElementsByClassName("burg");
-    let old_order = document.getElementsByClassName("old");
-    function toggle(){
-        if(toggle_button.checked){
-            for(let i = 0; i < burg_order.length; i++){
-                burg_order[i].style.display = "flex";
-            }
-            for(let i = 0; i < old_order.length; i++){
-                old_order[i].style.display = "none";
-            }
-        }else{
-            for(let i = 0; i < burg_order.length; i++){
-                burg_order[i].style.display = "none";
-            }
-            for(let i = 0; i < old_order.length; i++){
-                old_order[i].style.display = "flex";
-            }
+    let radio = document.getElementsByName("order");
+    let cs = document.getElementById("cs-order");
+    let ar = document.getElementById("ar-order");
+    let fc = document.getElementById("fc-order");
+    let bgd = document.getElementById("bgd-order");
+    function orderSwitch(value){
+        cs.style.display = "none";
+        ar.style.display = "none";
+        fc.style.display = "none";
+        bgd.style.display = "none";
+        switch(value){
+            case "sc":
+                cs.style.display = "flex";
+                break;
+            case "ar":
+                ar.style.display = "flex";
+                break;
+            case "fc":
+                fc.style.display = "flex";
+                break;
+            case "bgd":
+                bgd.style.display = "flex";
+                break;
         }
     }
 </script>
