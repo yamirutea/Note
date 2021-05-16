@@ -1,0 +1,97 @@
+/********** tag **********/
+body{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: flex;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    box-sizing: border-box;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+header{
+    display: flex;
+    box-sizing: border-box;
+}
+footer{
+    display: flex;
+    box-sizing: border-box;
+}
+button{
+    display: flex;
+    box-sizing: border-box;
+}
+img{
+    display: flex;
+    box-sizing: border-box;
+    object-fit: cover;
+    pointer-events: none;
+}
+p{
+    display: flex;
+    box-sizing: border-box;
+    margin: 4px 0px;
+}
+a{
+    display: flex;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0px;
+    color: #efefef;
+}
+
+/********** class **********/
+.outer{
+    width: 100%;
+    padding: 0px 5vmin;
+}
+.inner{
+    width: 1280px;
+    margin: 0px auto;
+}
+.hidden{
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+.ad-banner{
+    justify-content: center;
+    width: 100%;
+    margin: 16px 0px;
+}
+.ad-banner-mobile{
+    display: none;
+    justify-content: center;
+    width: 100%;
+    margin: 16px 0px;
+}
+@media screen and (max-width: 780px){
+    .ad-banner{
+        display: none;
+    }
+    .ad-banner-mobile{
+        display: flex;
+    }
+}
+/********** (screen < 1280px) **********/
+@media screen and (max-width: 1280px){
+    .inner{
+        width: 100%;
+    }
+}

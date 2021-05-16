@@ -4,69 +4,52 @@
 }
 body{
     font-family: MyFont;
+    color: #ffffff;
     background-color: #000000;
-    margin: 4px 0px;
-}
-div{
-    display: flex;
-    box-sizing: border-box;
 }
 
-.toggle_switch {
-    display: table;
+.radio-wrapper{
+    width: 100%;
+    margin: 1vmin 0px;
+    justify-content: space-between;
 }
-.toggle_switch > input {
-    display: none;
+label{
+    width: 100%;
+    text-align: center;
+    background-color: #5c172c;
+    border: solid 1px #000000;
+    user-select: none;
+    font-size: 18px;
 }
-.toggle_switch > label {
-    display: block;
-    position: relative;
-    margin-left: -48px;
-    width: 48px;
-    height: 24px;
-    border-radius: 12px;
-    background-color: #808080;
-    cursor: pointer;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-.toggle_switch > label::before {
-    position: absolute;
-    left: 0;
-    width: 24px;
-    height: 24px;
-    border-radius: 12px;
-    background-color: #ffffff;
-    transition: 0.3s;
-    content: "";
-}
-.toggle_switch > input:checked + label {
+input[type="radio"]:checked + label{
     background-color: #e73b6f;
 }
-.toggle_switch > input:checked + label::before {
-    left: calc(100% - 24px);
-}
-.burg{
+input[type="radio"]{
     display: none;
 }
 
-.outer{
-    width: 100%;
-    padding: 0px 2vmin;
+#sc-order{
+    display: flex;
 }
-.inner{
-    width: 1280px;
-    margin: 0px auto;
+#ar-order{
+    display: none;
 }
+#fc-order{
+    display: none;
+}
+#bgd-order{
+    display: none;
+}
+
 .orders{
-    width: 100%;
     user-select: none;
+    justify-content: center;
 }
 .order{
-    width: 49%;
-    max-width: 170px;
+    width: 100%;
+    margin: 0 1vmin;
+    max-width: 180px;
     flex-direction: column;
-    margin: 0px 2%;
-    flex-grow: 999;
 }
 .title{
     display: block;
@@ -167,21 +150,4 @@ div{
 }
 .gold{
     background-color: rgb(241, 214, 124);
-}
-
-/********** (screen < 780px) **********/
-@media screen and (max-width: 780px){
-    .inner{
-        width: 100%;
-    }
-    .orders{
-        justify-content: center;
-    }
-}
-
-/********** (screen < 1280px) **********/
-@media screen and (max-width: 1280px){
-    .inner{
-        width: 100%;
-    }
 }
