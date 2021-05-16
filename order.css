@@ -5,11 +5,6 @@
 body{
     font-family: MyFont;
     background-color: #000000;
-    margin: 4px 0px;
-}
-div{
-    display: flex;
-    box-sizing: border-box;
 }
 
 .toggle_switch {
@@ -49,14 +44,6 @@ div{
     display: none;
 }
 
-.outer{
-    width: 100%;
-    padding: 0px 2vmin;
-}
-.inner{
-    width: 1280px;
-    margin: 0px auto;
-}
 .orders{
     width: 100%;
     user-select: none;
@@ -167,21 +154,4 @@ div{
 }
 .gold{
     background-color: rgb(241, 214, 124);
-}
-
-/********** (screen < 780px) **********/
-@media screen and (max-width: 780px){
-    .inner{
-        width: 100%;
-    }
-    .orders{
-        justify-content: center;
-    }
-}
-
-/********** (screen < 1280px) **********/
-@media screen and (max-width: 1280px){
-    .inner{
-        width: 100%;
-    }
 }
