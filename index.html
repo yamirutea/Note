@@ -16,20 +16,18 @@
     <body>
         <h1 class="hidden">AoE2 Orders</h1>
         <!-- オーダー選択 -->
-        <div class="outer">
-            <div class="inner" style="flex-direction: column">
-                <div class="radio-wrapper">
-                    <input id="dr-radio" type="radio" name="order" checked>
-                    <label for="dr-radio" onclick="orderSwitch('dr')">暗黒</label>
-                    <input id="ff-radio" type="radio" name="order">
-                    <label for="ff-radio" onclick="orderSwitch('ff')">領主</label>
-                    <input id="fc-radio" type="radio" name="order">
-                    <label for="fc-radio" onclick="orderSwitch('fc')">城主</label>
-                    <input id="fi-radio" type="radio" name="order">
-                    <label for="fi-radio" onclick="orderSwitch('fi')">帝王</label>
-                    <input id="bgd-radio" type="radio" name="order">
-                    <label for="bgd-radio" onclick="orderSwitch('bgd')">固有</label>
-                </div>
+        <div class="bottom-menu">
+            <div class="radio-wrapper">
+                <input id="dr-radio" type="radio" name="order" checked>
+                <label for="dr-radio" onclick="orderSwitch('dr')">暗黒</label>
+                <input id="ff-radio" type="radio" name="order">
+                <label for="ff-radio" onclick="orderSwitch('ff')">領主</label>
+                <input id="fc-radio" type="radio" name="order">
+                <label for="fc-radio" onclick="orderSwitch('fc')">城主</label>
+                <input id="fi-radio" type="radio" name="order">
+                <label for="fi-radio" onclick="orderSwitch('fi')">帝王</label>
+                <input id="bgd-radio" type="radio" name="order">
+                <label for="bgd-radio" onclick="orderSwitch('bgd')">固有</label>
             </div>
         </div>
         <!-- オーダー表示 -->
