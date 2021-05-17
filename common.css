@@ -86,17 +86,21 @@ a{
     width: 100%;
     margin: 16px 0px;
 }
+/********** (screen < 1280px) **********/
+@media screen and (max-width: 1280px){
+    .inner{
+        width: 100%;
+    }
+}
+/********** (screen < 780px) **********/
 @media screen and (max-width: 780px){
+    .outer{
+        padding: 0px 0px;
+    }
     .ad-banner{
         display: none;
     }
     .ad-banner-mobile{
         display: flex;
-    }
-}
-/********** (screen < 1280px) **********/
-@media screen and (max-width: 1280px){
-    .inner{
-        width: 100%;
     }
 }

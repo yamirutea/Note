@@ -170,3 +170,11 @@ input[type="radio"]{
 .gold{
     background-color: rgb(241, 214, 124);
 }
+
+/********** (screen < 780px) **********/
+@media screen and (max-width: 780px){
+    .orders{
+        border-left: 0px;
+        border-right: 0px;
+    }
+}
