@@ -84,6 +84,7 @@ input[type="radio"]{
 .title{
     flex-direction: column;
     height: 4.2vh;
+    margin: 0px 0.2vh;
     margin-top: -0.5vh;
     text-overflow: ellipsis;
     font-size: 1.5vh;
@@ -161,10 +162,9 @@ input[type="radio"]{
 .boar{
     background-color: rgb(231, 160, 119);
 }
-.boar4{
-    position: relative;
-    height: calc(10.2vh - 4px);
-    background-color: rgb(231, 160, 119);
+.boar2{
+    color: rgb(231, 160, 119) !important;
+    border: dotted 0.3vh rgb(231, 160, 119);
 }
 .wood{
     background-color: rgb(192, 117, 87);
