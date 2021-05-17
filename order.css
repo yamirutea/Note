@@ -36,13 +36,16 @@ input[type="radio"]{
     display: none;
 }
 
-#sc-order{
+#dr-order{
     display: flex;
 }
-#ar-order{
+#ff-order{
     display: none;
 }
 #fc-order{
+    display: none;
+}
+#fi-order{
     display: none;
 }
 #bgd-order{
@@ -56,8 +59,8 @@ input[type="radio"]{
     justify-content: center;
     background-size: auto auto;
     background-image: repeating-linear-gradient(
-        45deg,transparent, transparent 1vmin, #101010 1vmin, #101010 1.6vmin );
-    border: solid 1px #404040;
+        45deg,transparent, transparent 1vmin, #181818 1vmin, #181818 1.6vmin );
+    border: solid 1px #303030;
     flex-grow: 1;
 }
 .order{

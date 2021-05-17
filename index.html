@@ -19,246 +19,39 @@
         <div class="outer">
             <div class="inner" style="flex-direction: column">
                 <div class="radio-wrapper">
-                    <input id="sc-radio" type="radio" name="order" value="sc" checked>
-                    <label for="sc-radio" onclick="orderSwitch('sc')">騎兵</label>
-                    <input id="ar-radio" type="radio" name="order" value="ar">
-                    <label for="ar-radio" onclick="orderSwitch('ar')">射手</label>
-                    <input id="fc-radio" type="radio" name="order" value="fc">
-                    <label for="fc-radio" onclick="orderSwitch('fc')">即城主</label>
-                    <input id="bgd-radio" type="radio" name="order" value="bgd">
-                    <label for="bgd-radio" onclick="orderSwitch('bgd')">Bgd</label>
+                    <input id="dr-radio" type="radio" name="order" checked>
+                    <label for="dr-radio" onclick="orderSwitch('dr')">暗黒</label>
+                    <input id="ff-radio" type="radio" name="order">
+                    <label for="ff-radio" onclick="orderSwitch('ff')">領主</label>
+                    <input id="fc-radio" type="radio" name="order">
+                    <label for="fc-radio" onclick="orderSwitch('fc')">城主</label>
+                    <input id="fi-radio" type="radio" name="order">
+                    <label for="fi-radio" onclick="orderSwitch('fi')">帝王</label>
+                    <input id="bgd-radio" type="radio" name="order">
+                    <label for="bgd-radio" onclick="orderSwitch('bgd')">固有</label>
                 </div>
             </div>
         </div>
         <!-- オーダー表示 -->
         <div class="outer">
             <div class="inner" style="flex-direction: column">
-                <div id="cs-order" class="orders">
-                    <!-- yamirutea式 Scout Rush -->
+                <div id="dr-order" class="orders">
+                    <!-- yamirutea式 Drush (Archers) -->
                     <div class="order">
                         <div class="title">
                             <span style="font-size: 10px">yamirutea式<br></span>
-                            Scout Rush
+                            Drush (Archers)
                         </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">2</div>
-                                <div class="first">
-                                    <div class="house2">家</div>
-                                </div>
-                                <div class="second">
-                                    <div class="food">肉</div>
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">3</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="food">肉</div>
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">4</div>
-                                <div class="first">
-                                    <div class="house">家</div>
-                                </div>
-                                <div class="second">
-                                    <div class="food">肉</div>
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">5</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="food">肉</div>
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">6</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="food">肉</div>
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">7</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="food">肉</div>
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">8</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="wood">TC木</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">9</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="wood">TC木</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">10</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="boar">ｲﾉ引</div>
-                                    <div class="food">肉</div>
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">11</div>
-                                <div class="first">
-                                    <div class="house">家x3</div>
-                                </div>
-                                <div class="second">
-                                    <div class="boar">ｲﾉ引</div>
-                                    <div class="food">肉</div>
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">12</div>
-                                <div class="first">
-                                    <div class="build">粉引き</div>
-                                </div>
-                                <div class="second">
-                                    <div class="berry">苺</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">13</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="berry">苺</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">14</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="berry">苺</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">15</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="berry">苺</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">16</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="berry">苺</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="number">17</div>
-                                <div class="first">
-                                    <div class="build">伐採所</div>
-                                </div>
-                                <div class="second">
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">18</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">19</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">20</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">21</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            機織り
-                        </div>
-                        <div class="group">
-                            <span style="color: rgb(255, 247, 134)">領主</span>
-                            <div class="villager">
-                                <div class="first">
-                                    <div class="build">戦士育成所</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="villager">
-                                <div class="first">
-                                    <div class="build">馬小屋</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">22</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">23</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">24</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
-                            <div class="villager">
-                                <div class="number">25</div>
-                                <div class="first"></div>
-                                <div class="second">
-                                    <div class="wood">木</div>
-                                </div>
-                            </div>
+                    </div>
+                    <!-- yamirutea式 Drush (Unique Unit) -->
+                    <div class="order">
+                        <div class="title">
+                            <span style="font-size: 10px">yamirutea式<br></span>
+                            Drush (Unique Unit)
                         </div>
                     </div>
                 </div>
-                <div id="ar-order" class="orders">
+                <div id="ff-order" class="orders">
                     <!-- yamirutea式 Archer Rush -->
                     <div class="order">
                         <div class="title">
@@ -484,22 +277,238 @@
                                     <div class="gold">金</div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <!-- yamirutea式 Scout Rush -->
+                    <div class="order">
+                        <div class="title">
+                            <span style="font-size: 10px">yamirutea式<br></span>
+                            Scout Rush
+                        </div>
+                        <div class="group">
                             <div class="villager">
-                                <div class="number">26</div>
+                                <div class="number">2</div>
+                                <div class="first">
+                                    <div class="house2">家</div>
+                                </div>
+                                <div class="second">
+                                    <div class="food">肉</div>
+                                    <div class="wood">木</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">3</div>
                                 <div class="first"></div>
                                 <div class="second">
-                                    <div class="gold">金</div>
+                                    <div class="food">肉</div>
+                                    <div class="wood">木</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">4</div>
+                                <div class="first">
+                                    <div class="house">家</div>
+                                </div>
+                                <div class="second">
+                                    <div class="food">肉</div>
+                                    <div class="wood">木</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">5</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="food">肉</div>
+                                    <div class="wood">木</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">6</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="food">肉</div>
+                                    <div class="wood">木</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">7</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="food">肉</div>
+                                    <div class="wood">木</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="villager">
+                                <div class="number">8</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="wood">TC木</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">9</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="wood">TC木</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="villager">
+                                <div class="number">10</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="boar">ｲﾉ引</div>
+                                    <div class="food">肉</div>
+                                    <div class="wood">木</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">11</div>
+                                <div class="first">
+                                    <div class="house">家x3</div>
+                                </div>
+                                <div class="second">
+                                    <div class="boar">ｲﾉ引</div>
+                                    <div class="food">肉</div>
+                                    <div class="wood">木</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="villager">
+                                <div class="number">12</div>
+                                <div class="first">
+                                    <div class="build">粉引き</div>
+                                </div>
+                                <div class="second">
+                                    <div class="berry">苺</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">13</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="berry">苺</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">14</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="berry">苺</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">15</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="berry">苺</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">16</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="berry">苺</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="villager">
+                                <div class="number">17</div>
+                                <div class="first">
+                                    <div class="build">伐採所</div>
+                                </div>
+                                <div class="second">
+                                    <div class="wood">木</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">18</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="wood">木</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">19</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="wood">木</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">20</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="wood">木</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">21</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="wood">木</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            機織り
+                        </div>
+                        <div class="group">
+                            <span style="color: rgb(255, 247, 134)">領主</span>
+                            <div class="villager">
+                                <div class="first">
+                                    <div class="build">戦士育成所</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="villager">
+                                <div class="first">
+                                    <div class="build">馬小屋</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">22</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="wood">木</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">23</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="wood">木</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">24</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="wood">木</div>
+                                </div>
+                            </div>
+                            <div class="villager">
+                                <div class="number">25</div>
+                                <div class="first"></div>
+                                <div class="second">
+                                    <div class="wood">木</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="fc-order" class="orders">
-                    <!-- yamirutea式 即城主 -->
+                    <!-- yamirutea式 Fast Castle (Knight) -->
                     <div class="order">
                         <div class="title">
                             <span style="font-size: 10px">yamirutea式<br></span>
-                            Fast Castle
+                            Fast Castle (Knight)
                         </div>
                         <div class="group">
                             <div class="villager">
@@ -715,13 +724,36 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="bgd-order" class="orders">
-                    <!-- yamirutea式 Burgundians SC Rush -->
+                    <!-- yamirutea式 Fast Castle (Castle) -->
                     <div class="order">
                         <div class="title">
                             <span style="font-size: 10px">yamirutea式<br></span>
-                            Burgundians Scout Rush
+                            Fast Castle (Castle)
+                        </div>
+                    </div>
+                </div>
+                <div id="fi-order" class="orders">
+                    <!-- yamirutea式 Fast Imperial -->
+                    <div class="order">
+                        <div class="title">
+                            <span style="font-size: 10px">yamirutea式<br></span>
+                            Fast Imperial
+                        </div>
+                    </div>
+                    <!-- yamirutea式 Fast Imperial (Castle) -->
+                    <div class="order">
+                        <div class="title">
+                            <span style="font-size: 10px">yamirutea式<br></span>
+                            Fast Imperial (Castle)
+                        </div>
+                    </div>
+                </div>
+                <div id="bgd-order" class="orders">
+                    <!-- yamirutea式 Scout Rush (Burgundians) -->
+                    <div class="order">
+                        <div class="title">
+                            <span style="font-size: 10px">yamirutea式<br></span>
+                            Scout Rush (Burgundians)
                         </div>
                         <div class="group">
                             <div class="villager">
@@ -945,11 +977,11 @@
                             </div>
                         </div>
                     </div>
-                    <!-- yamirutea式 bgd 即城主 -->
+                    <!-- yamirutea式 Fast Castle (Burgundians) -->
                     <div class="order">
                         <div class="title">
                             <span style="font-size: 10px">yamirutea式<br></span>
-                            Burgundians Fast Castle
+                            Fast Castle (Burgundians)
                         </div>
                         <div class="group">
                             <div class="villager">
@@ -1191,24 +1223,29 @@
 
 <script>
     let radio = document.getElementsByName("order");
-    let cs = document.getElementById("cs-order");
-    let ar = document.getElementById("ar-order");
+    let dr = document.getElementById("dr-order");
+    let ff = document.getElementById("ff-order");
     let fc = document.getElementById("fc-order");
+    let fi = document.getElementById("fi-order");
     let bgd = document.getElementById("bgd-order");
     function orderSwitch(value){
-        cs.style.display = "none";
-        ar.style.display = "none";
+        dr.style.display = "none";
+        ff.style.display = "none";
         fc.style.display = "none";
+        fi.style.display = "none";
         bgd.style.display = "none";
         switch(value){
-            case "sc":
-                cs.style.display = "flex";
+            case "dr":
+                dr.style.display = "flex";
                 break;
-            case "ar":
-                ar.style.display = "flex";
+            case "ff":
+                ff.style.display = "flex";
                 break;
             case "fc":
                 fc.style.display = "flex";
+                break;
+            case "fi":
+                fi.style.display = "flex";
                 break;
             case "bgd":
                 bgd.style.display = "flex";
