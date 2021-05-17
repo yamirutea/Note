@@ -11,6 +11,10 @@ div{
     display: flex;
     box-sizing: border-box;
 }
+label{
+    display: flex;
+    box-sizing: border-box;
+}
 nav{
     display: flex;
     box-sizing: border-box;

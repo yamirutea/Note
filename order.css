@@ -12,6 +12,10 @@ body{
     background-color: #000000;
 }
 
+.orders-area{
+    height: 93vh;
+    overflow-y: auto;
+}
 .bottom-menu{
     width: 100%;
     height: 7vh;
@@ -23,16 +27,15 @@ body{
     height: 100%;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #3b101d;
+    border-top: 0.2vh solid #4e1526;
+    background-color: #290f16;
 }
 label{
     width: 100%;
     height: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     color: #cccccc;
-    background-color: #290f16;
     user-select: none;
     font-size: 3vh;
 }
@@ -60,6 +63,7 @@ input[type="radio"]{
 }
 
 .orders{
+    height: 100%;
     margin: 1vmin 0px;
     padding: 1vmin;
     user-select: none;
