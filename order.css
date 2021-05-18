@@ -184,6 +184,9 @@ input[type="radio"]{
 .stone{
     background-color: rgb(173, 177, 190);
 }
+.wood-to-stone{
+    background: linear-gradient(to right, rgb(192, 117, 87) 45%,rgb(173, 177, 190) 55%);
+}
 
 /********** (screen < 780px) **********/
 @media screen and (max-width: 780px){
