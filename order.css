@@ -49,10 +49,10 @@ input[type="radio"]{
 }
 
 #dr-order{
-    display: flex;
+    display: none;
 }
 #ff-order{
-    display: none;
+    display: flex;
 }
 #fc-order{
     display: none;
