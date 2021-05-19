@@ -3,36 +3,20 @@
 <!-- コンテンツ -->
 <html lang="ja">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:type" content="website">
         <meta property="og:title" content="AoE2 Orders">
         <meta property="og:description" content="AoE2 Orders">
-        <link rel="stylesheet" href="lib/swiper.min.css"/>
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/common.css?ver=1.25"/>
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/order.css?ver=1.25"/>
+        <meta property="og:image" content="images/sample_01.png">
+        <link rel="stylesheet" href="lib/swiper.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/common.css?ver=1.25">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/order.css?ver=1.25">
         <title>AoE2 Orders</title>
     </head>
     <body>
         <h1 class="hidden">AoE2 Orders</h1>
-        <!-- オーダー選択 -->
-<!--     
-        <div class="bottom-menu">
-            <div class="radio-wrapper">
-                <input id="dr-radio" type="radio" name="order">
-                <label for="dr-radio" onclick="orderSwitch('dr')">暗黒</label>
-                <input id="ff-radio" type="radio" name="order" checked>
-                <label for="ff-radio" onclick="orderSwitch('ff')">領主</label>
-                <input id="fc-radio" type="radio" name="order">
-                <label for="fc-radio" onclick="orderSwitch('fc')">城主</label>
-                <input id="fi-radio" type="radio" name="order">
-                <label for="fi-radio" onclick="orderSwitch('fi')">帝王</label>
-                <input id="bgd-radio" type="radio" name="order">
-                <label for="bgd-radio" onclick="orderSwitch('bgd')">固有</label>
-            </div>
-        </div>
- -->
         <!-- オーダー表示 -->
         <div class="outer orders-area">
             <div class="inner swiper-container tab-contents">
@@ -924,8 +908,19 @@
                                         <div class="berry">苺</div>
                                     </div>
                                 </div>
-                                <div class="omit">
-                                    …
+                                <div class="villager">
+                                    <div class="number">17</div>
+                                    <div class="first"></div>
+                                    <div class="second">
+                                        <div class="berry">苺</div>
+                                    </div>
+                                </div>
+                                <div class="villager">
+                                    <div class="number">18</div>
+                                    <div class="first"></div>
+                                    <div class="second">
+                                        <div class="berry">苺</div>
+                                    </div>
                                 </div>
                                 <div class="villager">
                                     <div class="number">19</div>
@@ -1182,8 +1177,19 @@
                                         <div class="berry">苺</div>
                                     </div>
                                 </div>
-                                <div class="omit">
-                                    …
+                                <div class="villager">
+                                    <div class="number">17</div>
+                                    <div class="first"></div>
+                                    <div class="second">
+                                        <div class="berry">苺</div>
+                                    </div>
+                                </div>
+                                <div class="villager">
+                                    <div class="number">18</div>
+                                    <div class="first"></div>
+                                    <div class="second">
+                                        <div class="berry">苺</div>
+                                    </div>
                                 </div>
                                 <div class="villager">
                                     <div class="number">19</div>
@@ -1351,44 +1357,11 @@
                 </div>
             </div>
         </div>
-        <!-- ページネーション -->
+        <!-- 下部メニュー -->
         <div class="swiper-pagination bottom-menu"></div>
+        <!-- スクリプト -->
         <script type="text/javascript" src="lib/swiper.min.js"></script>
         <script type="text/javascript" src="scripts/swiper-config.js"></script> 
         <script type="text/javascript" src="scripts/vh.js"></script>
-<!--         
-        <script type="text/javascript">
-            let radio = document.getElementsByName("order");
-            let dr = document.getElementById("dr-order");
-            let ff = document.getElementById("ff-order");
-            let fc = document.getElementById("fc-order");
-            let fi = document.getElementById("fi-order");
-            let bgd = document.getElementById("bgd-order");
-            function orderSwitch(value){
-                dr.style.display = "none";
-                ff.style.display = "none";
-                fc.style.display = "none";
-                fi.style.display = "none";
-                bgd.style.display = "none";
-                switch(value){
-                    case "dr":
-                        dr.style.display = "flex";
-                        break;
-                    case "ff":
-                        ff.style.display = "flex";
-                        break;
-                    case "fc":
-                        fc.style.display = "flex";
-                        break;
-                    case "fi":
-                        fi.style.display = "flex";
-                        break;
-                    case "bgd":
-                        bgd.style.display = "flex";
-                        break;
-                }
-            }
-        </script>
- -->
     </body>
 </html>

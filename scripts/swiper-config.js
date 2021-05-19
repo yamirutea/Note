@@ -1,8 +1,8 @@
 let mySwiper = new Swiper ('.swiper-container', {
     // 以下にオプションを設定
-    loop: true,               //ループするか
+    loop: false,               //ループするか
     initialSlide: 1,          //初期スライド
-    autoHeight: true,        //各スライドの高さを維持するか
+    autoHeight: true,         //個別の高さを残すか
     //ページネーション表示の設定
     pagination: { 
     el: '.swiper-pagination', //ページネーションの要素
