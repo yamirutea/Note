@@ -9,6 +9,7 @@
         <meta property="og:type" content="website">
         <meta property="og:title" content="AoE2 Orders">
         <meta property="og:description" content="AoE2 Orders">
+        <link rel="stylesheet" href="lib/swiper.min.css"/>
         <link rel="stylesheet" type="text/css" media="screen" href="styles/common.css?ver=1.24"/>
         <link rel="stylesheet" type="text/css" media="screen" href="styles/order.css?ver=1.24"/>
         <title>AoE2 Orders</title>
@@ -16,6 +17,7 @@
     <body>
         <h1 class="hidden">AoE2 Orders</h1>
         <!-- オーダー選択 -->
+<!--     
         <div class="bottom-menu">
             <div class="radio-wrapper">
                 <input id="dr-radio" type="radio" name="order">
@@ -30,11 +32,12 @@
                 <label for="bgd-radio" onclick="orderSwitch('bgd')">固有</label>
             </div>
         </div>
+ -->
         <!-- オーダー表示 -->
         <div class="outer orders-area">
-            <div class="inner">
-                <div>
-                    <div id="dr-order" class="orders">
+            <div class="inner swiper-container tab-contents">
+                <div class="swiper-wrapper">
+                    <div id="dr-order" class="orders swiper-slide">
                         <!-- yamirutea式 Drush (Archers) -->
                         <div class="order">
                             <div class="title">
@@ -291,7 +294,7 @@
                             研究中
                         </div>
                     </div>
-                    <div id="ff-order" class="orders">
+                    <div id="ff-order" class="orders swiper-slide">
                         <!-- yamirutea式 Archer Rush -->
                         <div class="order">
                             <div class="title">
@@ -778,7 +781,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="fc-order" class="orders">
+                    <div id="fc-order" class="orders swiper-slide">
                         <!-- yamirutea式 Fast Castle (Knight) -->
                         <div class="order">
                             <div class="title">
@@ -1309,7 +1312,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="fi-order" class="orders">
+                    <div id="fi-order" class="orders swiper-slide">
                         <!-- yamirutea式 Fast Imperial -->
                         <div class="order">
                             <div class="title">
@@ -1327,7 +1330,7 @@
                             研究中
                         </div>
                     </div>
-                    <div id="bgd-order" class="orders">
+                    <div id="bgd-order" class="orders swiper-slide">
                         <!-- yamirutea式 Archer Rush (Ethiopians) -->
                         <div class="order">
                             <div class="title">
@@ -1348,39 +1351,44 @@
                 </div>
             </div>
         </div>
+        <!-- ページネーション -->
+        <div class="swiper-pagination bottom-menu"></div>
+        <script type="text/javascript" src="lib/swiper.min.js"></script>
+        <script type="text/javascript" src="scripts/swiper-config.js"></script> 
+        <script type="text/javascript" src="scripts/vh.js"></script>
+<!--         
+        <script type="text/javascript">
+            let radio = document.getElementsByName("order");
+            let dr = document.getElementById("dr-order");
+            let ff = document.getElementById("ff-order");
+            let fc = document.getElementById("fc-order");
+            let fi = document.getElementById("fi-order");
+            let bgd = document.getElementById("bgd-order");
+            function orderSwitch(value){
+                dr.style.display = "none";
+                ff.style.display = "none";
+                fc.style.display = "none";
+                fi.style.display = "none";
+                bgd.style.display = "none";
+                switch(value){
+                    case "dr":
+                        dr.style.display = "flex";
+                        break;
+                    case "ff":
+                        ff.style.display = "flex";
+                        break;
+                    case "fc":
+                        fc.style.display = "flex";
+                        break;
+                    case "fi":
+                        fi.style.display = "flex";
+                        break;
+                    case "bgd":
+                        bgd.style.display = "flex";
+                        break;
+                }
+            }
+        </script>
+ -->
     </body>
 </html>
-
-<script type="text/javascript" src="scripts/vh.js"></script>
-<script type="text/javascript">
-    let radio = document.getElementsByName("order");
-    let dr = document.getElementById("dr-order");
-    let ff = document.getElementById("ff-order");
-    let fc = document.getElementById("fc-order");
-    let fi = document.getElementById("fi-order");
-    let bgd = document.getElementById("bgd-order");
-    function orderSwitch(value){
-        dr.style.display = "none";
-        ff.style.display = "none";
-        fc.style.display = "none";
-        fi.style.display = "none";
-        bgd.style.display = "none";
-        switch(value){
-            case "dr":
-                dr.style.display = "flex";
-                break;
-            case "ff":
-                ff.style.display = "flex";
-                break;
-            case "fc":
-                fc.style.display = "flex";
-                break;
-            case "fi":
-                fi.style.display = "flex";
-                break;
-            case "bgd":
-                bgd.style.display = "flex";
-                break;
-        }
-    }
-</script>
