@@ -146,6 +146,12 @@ input[type="radio"]{
 .second{
     width: 600%;
 }
+.omit{
+    height: calc(var(--vh, 1vh) * 1.2);
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    font-size: 1.2vh;
+}
 
 /***** セルの色 *****/
 .house{
