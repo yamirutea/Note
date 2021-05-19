@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'MyFont';
-    src: url('RocknRollOne-Regular.ttf');
+    src: url('../fonts/RocknRollOne-Regular.ttf');
 }
 html{
     height: 100%;
