@@ -147,10 +147,12 @@ input[type="radio"]{
     width: 600%;
 }
 .omit{
-    height: calc(var(--vh, 1vh) * 1.2);
+    height: calc(var(--vh, 1vh) * 1.4);
     writing-mode: vertical-rl;
     text-orientation: sideways;
     font-size: 1.2vh;
+    justify-content: center;
+    align-items: center;
 }
 
 /***** セルの色 *****/
