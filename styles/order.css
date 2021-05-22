@@ -174,6 +174,10 @@ body{
 .stone{
     background-color: rgb(173, 177, 190);
 }
+.stone2{
+    color: rgb(173, 177, 190) !important;
+    border: dotted 0.3vh rgb(173, 177, 190);
+}
 .wood-to-stone{
     background: linear-gradient(to right, rgb(192, 117, 87) 45%,rgb(173, 177, 190) 55%);
 }
