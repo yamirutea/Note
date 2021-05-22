@@ -143,7 +143,11 @@ body{
     background-color: rgb(132, 185, 255);
 }
 .build{
-    background-color: rgb(189, 131, 255);
+    background-color: rgb(193, 139, 255);
+}
+.build2{
+    color: rgb(193, 139, 255) !important;
+    border: dotted 0.3vh rgb(193, 139, 255);
 }
 .boar{
     background-color: rgb(231, 160, 119);
