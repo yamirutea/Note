@@ -3,6 +3,11 @@ let mySwiper = new Swiper ('.swiper-container', {
     loop: true,               //ループするか
     initialSlide: 1,          //初期スライド
     autoHeight: true,         //個別の高さを残すか
+   
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
     //ページネーション表示の設定
     pagination: { 
     el: '.swiper-pagination', //ページネーションの要素
