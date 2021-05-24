@@ -23,6 +23,10 @@ body{
 .swiper-container::-webkit-scrollbar {
     display:none;
 }
+.swiper-pagination{
+    display: flex;
+    width: 100%;
+}
 .swiper-pagination-bullet{
     display: flex;
     width: 100%;
@@ -50,7 +54,7 @@ body{
 }
 .orders{
     margin: 1vh 0px;
-    padding: 1vh 1vh;
+    padding: 1vh 1vw;
     user-select: none;
     justify-content: center;
     flex-grow: 1;
@@ -115,7 +119,6 @@ body{
 }
 .tech{
     height: calc(var(--vh, 1vh) * 1.8);
-    margin: 0.15vh;
     background-color: transparent;
     font-family: sans-serif;
     color: #ffffff;
@@ -131,10 +134,10 @@ body{
 }
 .number{
     width: 100%;
-    margin: 0.2vh 0.1vh;
+    margin: calc(var(--vh, 1vh) * 0.15);
     justify-content: center;
     align-items: center;
-    font-size: 1.3vh;
+    font-size: calc(var(--vh, 1vh) * 1.3);
 }
 .first{
     width: 300%;
@@ -146,7 +149,7 @@ body{
     height: calc(var(--vh, 1vh) * 1.4);
     writing-mode: vertical-rl;
     text-orientation: sideways;
-    font-size: 1.2vh;
+    font-size: calc(var(--vh, 1vh) * 1.2);
     justify-content: center;
     align-items: center;
 }
@@ -160,22 +163,20 @@ body{
 }
 .house2{
     position: relative;
-    height: calc(var(--vh, 1vh) * 4.8);
+    height: calc(var(--vh, 1vh) * 4.7);
     background-color: rgb(113, 158, 218);
 }
 .build{
     background-color: rgb(158, 113, 209);
 }
 .build2{
-    color: rgb(158, 113, 209) !important;
-    border: dotted 0.3vh rgb(158, 113, 209);
+    border: dotted calc(var(--vh, 1vh) * 0.25) rgb(158, 113, 209);
 }
 .boar{
     background-color: rgb(212, 149, 112);
 }
 .boar2{
-    color: rgb(231, 160, 119) !important;
-    border: dotted 0.3vh rgb(212, 149, 112);
+    border: dotted calc(var(--vh, 1vh) * 0.25) rgb(212, 149, 112);
 }
 .wood{
     background-color: rgb(165, 106, 82);
@@ -196,14 +197,48 @@ body{
     background-color: rgb(173, 177, 190);
 }
 .stone2{
-    color: rgb(173, 177, 190) !important;
-    border: dotted 0.3vh rgb(173, 177, 190);
+    border: dotted calc(var(--vh, 1vh) * 0.25) rgb(173, 177, 190);
 }
 .wood-to-stone{
     background: linear-gradient(to right, rgb(192, 117, 87) 45%,rgb(173, 177, 190) 55%);
 }
 
-/********** (screen < 780px) **********/
-@media screen and (max-width: 780px){
-
+/**********       PC用       **********/
+/********** (screen > 780px) **********/
+@media screen and (min-width: 780px){
+    .group{
+        margin: 1px 0;
+        padding: 1px;
+    }
+    .villager{
+        margin: 1px;
+        padding: 1px;
+    }
+    .villager > div > div{
+        margin: 1px;
+    }
+    .bottom-menu{
+        position: static;
+        box-sizing: border-box;
+        height: calc(var(--vh, 1vh) * 5.0);
+        border-top: solid 0 #2c3244;
+        border-bottom: solid 1px #2c3244;
+    }
+    .swiper-pagination{
+        display: flex;
+        justify-content: space-around;
+        position: static;
+        max-width: 1280px;
+        margin: 0px auto;
+    }
+    .swiper-pagination-bullet{
+        max-width: 160px;
+        height: calc(var(--vh, 1vh) * 4.0);
+        margin: calc(var(--vh, 1vh) * 0.5);
+        border-radius: calc(var(--vh, 1vh) * 2.0);
+    }
+    .orders-area{
+        height: calc(var(--vh, 1vh) * 95);
+        -webkit-overflow-scrolling: touch;
+    }
 }

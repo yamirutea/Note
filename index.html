@@ -11,15 +11,19 @@
         <meta property="og:description" content="AoE2 Orders">
         <meta property="og:image" content="images/sample_01.png">
         <link rel="stylesheet" href="lib/swiper.min.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/common.css?ver=1.28">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/order.css?ver=1.28">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/common.css?ver=1.00">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/order.css?ver=1.29">
         <title>AoE2 Orders</title>
     </head>
     <body>
         <h1 class="hidden">AoE2 Orders</h1>
+        <!-- 下部メニュー -->
+        <div class="bottom-menu">
+            <div class="swiper-pagination"></div>
+        </div>
         <!-- オーダー表示 -->
-        <div class="outer orders-area">
-            <div class="inner swiper-container">
+        <div class="orders-area">
+            <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="orders swiper-slide">
                         <!-- yamirutea式 Drush (Archer) -->
@@ -2877,8 +2881,6 @@
                 </div>
             </div>
         </div>
-        <!-- 下部メニュー -->
-        <div class="swiper-pagination bottom-menu"></div>
         <!-- スクリプト -->
         <script type="text/javascript" src="lib/swiper.min.js"></script>
         <script type="text/javascript" src="scripts/swiper-config.js"></script> 
