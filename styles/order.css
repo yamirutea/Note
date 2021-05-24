@@ -127,7 +127,7 @@ body{
     black -0.1vh 0.1vh 0.0vh, black  0.1vh -0.1vh 0.0vh,
     black  0.0vh 0.1vh 0.0vh, black  0.0vh -0.1vh 0.0vh,
     black -0.1vh 0.0vh 0.0vh, black  0.1vh  0.0vh 0.0vh;
-    font-size: calc(var(--vh, 1vh) * 1.6);
+    font-size: calc(var(--vh, 1vh) * 1.4);
 }
 .tech > div{
     align-items: center;
@@ -137,6 +137,13 @@ body{
     margin: calc(var(--vh, 1vh) * 0.15);
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
+    color: #d0d0d0;
+    text-shadow: 
+    black  0.1vh 0.1vh 0.0vh, black -0.1vh -0.1vh 0.0vh,
+    black -0.1vh 0.1vh 0.0vh, black  0.1vh -0.1vh 0.0vh,
+    black  0.0vh 0.1vh 0.0vh, black  0.0vh -0.1vh 0.0vh,
+    black -0.1vh 0.0vh 0.0vh, black  0.1vh  0.0vh 0.0vh;
     font-size: calc(var(--vh, 1vh) * 1.3);
 }
 .first{
