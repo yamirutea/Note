@@ -14,7 +14,8 @@ body{
     bottom: 0;
     background-color: #1c202c;
     border-top: solid 0.2vh #2c3244;
-    box-sizing: content-box
+    box-sizing: content-box;
+    z-index: 20;
 }
 .swiper-container{
     overflow-y: auto;
@@ -81,7 +82,7 @@ body{
     width: 100%;
     margin: calc(var(--vh, 1vh) * 0.15) 0;
     padding: calc(var(--vh, 1vh) * 0.15);
-    border-radius: calc(var(--vh, 1vh) * 0.8);
+    border-radius: calc(var(--vh, 1vh) * 0.75);
     background-color: #606060;
     justify-content: center;
     align-items: center;
@@ -104,7 +105,7 @@ body{
 .villager > div > div{
     width: 100%;
     margin: calc(var(--vh, 1vh) * 0.15);
-    border-radius: calc(var(--vh, 1vh) * 0.6);
+    border-radius: calc(var(--vh, 1vh) * 0.65);
     justify-content: center;
     align-items: center;
     white-space: nowrap;
