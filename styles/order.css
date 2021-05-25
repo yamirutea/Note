@@ -117,6 +117,11 @@ body{
     black -0.1vh 0.0vh 0.0vh, black  0.1vh  0.0vh 0.0vh;
     font-size: 1.6vh;
 }
+img{
+    margin-top: calc(var(--vh, 1vh) * -0.5);
+    height: calc(var(--vh, 1vh) * 3.0);
+    filter:drop-shadow(0.1vh 0.1vh 0.4vh black);
+}
 .tech{
     height: calc(var(--vh, 1vh) * 1.8);
     background-color: transparent;
@@ -131,6 +136,20 @@ body{
 }
 .tech > div{
     align-items: center;
+}
+.age{
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 1.8);
+    background-color: transparent;
+    font-family: sans-serif;
+    color: #fdff73;
+    text-shadow: 
+    black  0.1vh 0.1vh 0.0vh, black -0.1vh -0.1vh 0.0vh,
+    black -0.1vh 0.1vh 0.0vh, black  0.1vh -0.1vh 0.0vh,
+    black  0.0vh 0.1vh 0.0vh, black  0.0vh -0.1vh 0.0vh,
+    black -0.1vh 0.0vh 0.0vh, black  0.1vh  0.0vh 0.0vh;
+    font-size: calc(var(--vh, 1vh) * 1.4);
+    justify-content: space-between;
 }
 .number{
     width: 100%;
@@ -162,9 +181,6 @@ body{
 }
 
 /***** セルの色 *****/
-.age{
-    color: #fdff73;
-}
 .house{
     background-color: rgb(113, 158, 218);
 }
