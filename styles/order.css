@@ -116,10 +116,10 @@ body{
     black -0.1vh 0.0vh 0.0vh, black  0.1vh  0.0vh 0.0vh;
     font-size: 1.6vh;
 }
-img{
+.age > img{
     margin-top: calc(var(--vh, 1vh) * -0.5);
     height: calc(var(--vh, 1vh) * 3.0);
-    filter:drop-shadow(0.1vh 0.1vh 0.4vh black);
+    filter: drop-shadow(0.1vh 0.1vh 0.2vh black);
 }
 .tech{
     height: calc(var(--vh, 1vh) * 1.8);
@@ -177,6 +177,15 @@ img{
     font-size: calc(var(--vh, 1vh) * 1.2);
     justify-content: center;
     align-items: center;
+}
+
+.slavs,
+.khmer,
+.britons,
+.ethiopians,
+.celts,
+.spanish{
+    display: none;
 }
 
 /***** セルの色 *****/
