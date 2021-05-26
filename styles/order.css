@@ -19,7 +19,6 @@ body{
 }
 .swiper-container{
     overflow-y: auto;
-    -ms-overflow-style: none;
 }
 .swiper-container::-webkit-scrollbar {
     display:none;
@@ -51,7 +50,6 @@ body{
 }
 .orders-area{
     height: calc(var(--vh, 1vh) * 93);
-    -webkit-overflow-scrolling: touch;
 }
 .orders{
     margin: 1vh 0px;
@@ -224,7 +222,10 @@ img{
     border: dotted calc(var(--vh, 1vh) * 0.25) rgb(173, 177, 190);
 }
 .wood-to-stone{
-    background: linear-gradient(to right, rgb(192, 117, 87) 45%,rgb(173, 177, 190) 55%);
+    background: linear-gradient(to right, rgb(192, 117, 87) 40%,rgb(173, 177, 190) 60%);
+}
+.stone-to-gold{
+    background: linear-gradient(to right, rgb(173, 177, 190) 40%,rgb(212, 189, 110) 60%);
 }
 
 /**********       PC用       **********/
@@ -263,6 +264,5 @@ img{
     }
     .orders-area{
         height: calc(var(--vh, 1vh) * 95);
-        -webkit-overflow-scrolling: touch;
     }
 }
