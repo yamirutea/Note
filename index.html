@@ -12,8 +12,8 @@
         <meta property="og:image" content="images/sample_01.png">
         <link rel="stylesheet" href="lib/swiper.min.css">
         <link rel="stylesheet" type="text/css" media="screen" href="styles/common.css?ver=1.00">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/dropdown.css?ver=1.00">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/order.css?ver=1.35">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/dropdown.css?ver=1.01">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/order.css?ver=1.36">
         <title>AoE2 Orders</title>
     </head>
     <body>
@@ -25,12 +25,12 @@
                 <span class="lines line-2"></span>
                 <span class="lines line-3"></span>
             </label>
-            <div class="menu-item" style="opacity: 1.0; pointer-events: auto;" onclick="decideCiv('slavs')"><img src="images/CivIcon-Slavs.png"      alt="Slavs Icon"></div>
-            <div class="menu-item" style="opacity: 0.2; pointer-events: none;" onclick="decideCiv('spanish')"><img src="images/CivIcon-Spanish.png"    alt="Spanish Icon"></div>
+            <div class="menu-item" style="opacity: 1.0; pointer-events: auto;" onclick="decideCiv('slavs')"><img src="images/CivIcon-Slavs.png" alt="Slavs Icon"></div>
+            <div class="menu-item" style="opacity: 0.2; pointer-events: none;" onclick="decideCiv('spanish')"><img src="images/CivIcon-Spanish.png" alt="Spanish Icon"></div>
             <div class="menu-item" style="opacity: 0.2; pointer-events: none;" onclick="decideCiv('ethiopians')"><img src="images/CivIcon-Ethiopians.png" alt="Ethiopians Icon"></div>
-            <div class="menu-item" style="opacity: 1.0; pointer-events: auto;" onclick="decideCiv('khmer')"><img src="images/CivIcon-Khmer.png"      alt="Khmer Icon"></div>
-            <div class="menu-item" style="opacity: 0.2; pointer-events: none;" onclick="decideCiv('celts')"><img src="images/CivIcon-Celts.png"      alt="Celts Icon"></div>
-            <div class="menu-item" style="opacity: 0.2; pointer-events: none;" onclick="decideCiv('britons')"><img src="images/CivIcon-Britons.png"    alt="Britons Icon"></div>
+            <div class="menu-item" style="opacity: 1.0; pointer-events: auto;" onclick="decideCiv('khmer')"><img src="images/CivIcon-Khmer.png" alt="Khmer Icon"></div>
+            <div class="menu-item" style="opacity: 0.2; pointer-events: none;" onclick="decideCiv('celts')"><img src="images/CivIcon-Celts.png" alt="Celts Icon"></div>
+            <div class="menu-item" style="opacity: 0.2; pointer-events: none;" onclick="decideCiv('britons')"><img src="images/CivIcon-Britons.png" alt="Britons Icon"></div>
         </nav>
         <!-- 下部メニュー -->
         <div class="bottom-menu">
@@ -2957,32 +2957,51 @@
         <script>
             let menu = document.getElementById("menu");
             let menuOpen = document.getElementById("menu-open");
+            mySwiper.pagination.bullets[4].onclick = uniqueButton;
             mySwiper.on('slideChange', function () {
                 if(mySwiper.realIndex == 4){
                     menu.style.opacity = 1.0;
                     menu.style.pointerEvents = "auto";
+                    menu.style.zIndex = "19";
                 }else{
                     menu.style.opacity = 0.0;
                     menu.style.pointerEvents = "none";
+                    menu.style.zIndex = "0";
                     menuOpen.checked = false;
-                }
-                let civs = document.getElementsByClassName("civs");
-                for(let i = 0; i < civs.length; i++){
-                    civs[i].style.display = "none";
+                    let civs = document.getElementsByClassName("civs");
+                    for(let i = 0; i < civs.length; i++){
+                        civs[i].style.opacity = 0.0;
+                        civs[i].style.visibility = "collapse";
+                        civs[i].style.width = "0%";
+                        civs[i].style.margin = "0px 0px";
+                    }
                 }
             });
-            function decideCiv(civ){
+            function uniqueButton(){
+                menu.style.opacity = 1.0;
+                menu.style.pointerEvents = "auto";
+                menu.style.zIndex = "19";
+                menuOpen.checked = false;
                 let civs = document.getElementsByClassName("civs");
                 for(let i = 0; i < civs.length; i++){
-                    civs[i].style.display = "none";
+                    civs[i].style.opacity = 0.0;
+                    civs[i].style.visibility = "collapse";
+                    civs[i].style.width = "0%";
+                    civs[i].style.margin = "0px 0px";
                 }
-                let civOrder = document.getElementsByClassName(civ);
-                for(let i = 0; i < civOrder.length; i++){
-                    civOrder[i].style.display = "flex";
-                }
+            }
+            function decideCiv(civ){
                 menu.style.opacity = 0.0;
                 menu.style.pointerEvents = "none";
                 menuOpen.checked = false;
+                menu.style.zIndex = "0";
+                let civOrder = document.getElementsByClassName(civ);
+                for(let i = 0; i < civOrder.length; i++){
+                    civOrder[i].style.visibility = "visible";
+                    civOrder[i].style.opacity = 1.0;
+                    civOrder[i].style.width = "100%";
+                    civOrder[i].style.margin = "0px 1vw";
+                }
             }
         </script>
     </body>

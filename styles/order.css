@@ -178,14 +178,9 @@ body{
     justify-content: center;
     align-items: center;
 }
-
-.slavs,
-.khmer,
-.britons,
-.ethiopians,
-.celts,
-.spanish{
-    display: none;
+.civs{
+    visibility: collapse;
+    transition: all 0.2s ease 0.0s;
 }
 
 /***** セルの色 *****/
