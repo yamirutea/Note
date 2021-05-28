@@ -68,13 +68,16 @@ body{
     flex-direction: column;
     height: calc(var(--vh, 1vh) * 4.2);
     margin: 0px 0.5vw;
-    margin-top: -0.5vh;
+    margin-top: calc(var(--vh, 1vh) * -1.5);
     text-overflow: ellipsis;
     font-size: 1.5vh;
     line-height: 2vh;
     color: #ffffff;
     overflow: visible;
     white-space: nowrap;
+}
+.title > span:first-child{
+    font-size: 1vh;
 }
 .group{
     width: 100%;
